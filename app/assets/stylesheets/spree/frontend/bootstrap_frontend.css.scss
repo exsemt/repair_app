@@ -1,0 +1,82 @@
+//Add your custom bootstrap variables here, see https://github.com/twbs/bootstrap-sass/blob/master/vendor/assets/stylesheets/bootstrap/_variables.scss for full list of variables.
+
+//--------- maybe -----------
+//$brand-primary: darkorange;
+//$brand-primary: #FF9900;
+$brand-primary: #742B00;
+$brand-success: #097054;
+$brand-info: #6599FF;
+//---------------------------
+
+$font-size-base: 13px;
+
+$icon-font-path: "../../bootstrap/";
+@import "bootstrap";
+
+// ---- variables ------
+//$yellow-bg: #ffde00;
+$yellow-bg: #fff300;
+
+// -- Spree Custom Header and Footer ---------------------
+#spree-header {
+  //  background: #1c5c92 asset-url('spree_header.jpg') center center;
+  background-color: $yellow-bg;
+  background-size: cover;
+  margin-bottom: $line-height-computed;
+  #header {
+    background: rgba(9, 22, 33, 0.2);
+    padding: $line-height-computed 0;
+  }
+  #logo {
+    margin-bottom: 10px;
+    img {
+      width: 306px;
+    }
+  }
+  .nav a {
+    //    color: #fff;
+    &:hover {
+      background:rgba(9, 22, 33, 0.1);
+    }
+  }
+  .navbar {
+    border: 0;
+    margin-bottom: 0;
+  }
+}
+.navbar-nav > li {
+  float: left;
+}
+#spree-footer {
+  background: $gray-dark;
+  padding-top: $padding-base-horizontal;
+  margin-top: $line-height-computed;
+  background-color: $yellow-bg;
+}
+
+#checkout-step-payment {
+
+}
+
+// -- Spree Layout Custom Rules -------------------------
+
+//TODO, bug #6
+.alert-error, .alert-registration_error { @extend .alert-danger; }
+.alert-alert { @extend .alert-info; }
+
+.product-body {
+  height: 170px;
+}
+.panel-footer {
+  background-color: $yellow-bg;
+}
+.well {
+  background-color: $yellow-bg;
+}
+.progress-steps {
+  margin-top: $line-height-computed;
+}
+h1 {
+  margin-bottom: 30px;
+}
+// ------------------------ maybe ---------------------
