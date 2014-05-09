@@ -1,0 +1,8 @@
+# ------------------ spree -----------------
+# init DB on server
+
+# set password
+  bundle exec rake db:seed
+
+# init examples
+  bundle exec rake spree_sample:load
