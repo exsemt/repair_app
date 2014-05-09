@@ -6,3 +6,6 @@
 
 # init examples
   bundle exec rake spree_sample:load
+
+# ------------ deployment ------------
+cap staging deploy:check
