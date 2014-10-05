@@ -8,12 +8,12 @@
 Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
-  config.site_name = "Notebook-Service24"
   config.allow_ssl_in_production = false
   config.allow_ssl_in_staging = false
 end
 
 # Spree::Config.set(:allow_ssl_in_production => false)
+Spree::Api::Config[:requires_authentication] = false
 
 Spree.user_class = "Spree::LegacyUser"
 Spree::Config.set(logo: "logo/spree_big.png")
