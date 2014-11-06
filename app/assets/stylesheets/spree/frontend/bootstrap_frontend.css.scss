@@ -8,7 +8,8 @@ $brand-success: #097054;
 $brand-info: #6599FF;
 //---------------------------
 
-$font-size-base: 13px;
+//$font-size-base: 13px;
+$font-size-base: 16px;
 
 $icon-font-path: "../../bootstrap/";
 @import "bootstrap";
@@ -24,7 +25,8 @@ $yellow-bg: #fff300;
   background-size: cover;
   margin-bottom: $line-height-computed;
   #header {
-    background: rgba(9, 22, 33, 0.2);
+//    background: rgba(9, 22, 33, 0.2);
+    background: #ffffda;
     padding: $line-height-computed 0;
   }
   #logo {
