@@ -16,7 +16,8 @@ $icon-font-path: "../../bootstrap/";
 
 // ---- variables ------
 //$yellow-bg: #ffde00;
-$yellow-bg: #fff300;
+//$yellow-bg: #ff8c00;
+$yellow-bg: #ffb400;
 
 // -- Spree Custom Header and Footer ---------------------
 #spree-header {
@@ -26,8 +27,13 @@ $yellow-bg: #fff300;
   margin-bottom: $line-height-computed;
   #header {
 //    background: rgba(9, 22, 33, 0.2);
-    background: #fffbb2;
+//    background: #fffbb2;
+    background: #585d62;
     padding: $line-height-computed 0;
+
+    ul.navbar-nav {
+      background-color: #ffb400;
+    }
   }
   #logo {
     margin-bottom: 10px;
@@ -58,6 +64,10 @@ $yellow-bg: #fff300;
 
 #checkout-step-payment {
 
+}
+
+body {
+  background-color: #f4f5f5;
 }
 
 // -- Spree Layout Custom Rules -------------------------
